@@ -1,0 +1,141 @@
+trang = "\033[1;37m\033[1m"
+xanh_la = "\033[1;32m\033[1m"
+xanh_duong = "\033[1;34m\033[1m"
+xanhnhat = '\033[1m\033[38;5;51m'
+do = "\033[1;31m\033[1m\033[1m"
+xam='\033[1;30m\033[1m'
+vang = "\033[1;33m\033[1m"
+tim = "\033[1;35m\033[1m"
+hongnhat = "#FFC0CB"
+kt_code = "</>"
+dac_biet = "\033[32;5;245m\033[1m\033[38;5;39m"
+vua = "\033[1;31m\033[1m\033[1m[\033[1;37m\033[1m=.=\033[1;31m\033[1m\033[1m] \033[1;37m\033[1m=> \033[1;32m\033[1m"
+
+den = '[1;90m'
+luc = '[1;32m'
+trang = '[1;37m'
+red = '[1;31m'
+vang = '[1;33m'
+tim = '[1;35m'
+lamd = '[1;34m'
+lam = '[1;36m'
+hong = '[1;95m'
+xnhac = '[1;95m'
+xduong = '[1;95m'
+do = '[1;33m'
+thanh_xau = trang + '' + lam + '[' + vang + 'vL' + lam + '] ' + trang + ' ' + luc
+thanh_dep = trang + '' + lam + '[' + luc + 'vL' + lam + '] ' + trang + ' ' + luc
+import requests
+import json
+import os
+from sys import platform
+from datetime import datetime
+from time import sleep, strftime
+import hashlib
+import hmac
+import uuid
+
+try:
+    from pystyle import Colors, Colorate
+except ImportError:
+    os.system('pip install pystyle')
+    from pystyle import Colors, Colorate
+
+banner = """
+████████╗ ██╗  ██╗ ██████╗ ███╗   ██╗ ██████╗ 
+╚══██╔══╝ ██║  ██║ ██╔═══██╗████╗  ██║ ██╔════╝ 
+   ██║    ███████║ ██║   ██║██╔██╗ ██║ ██║  ███╗
+   ██║    ██╔══██║ ██║   ██║██║╚██╗██║ ██║   ██║
+   ██║    ██║  ██║ ╚██████╔╝██║ ╚████║ ╚██████╔╝
+   ╚═╝    ╚═╝  ╚═╝  ╚═════╝ ╚═╝  ╚═══╝  ╚═════╝ 
+\033[0m
+"""
+print(banner)
+
+def vanlong(so):
+    a = '────' * (so - 1) + '─'
+    for i in range(len(a)):
+        sleep(0.003)
+    print(a)
+
+def clear():
+    if platform.startswith('linux'):
+        os.system('clear')
+    else:
+        os.system('cls')
+
+def banner():
+    print('[0m', end='')
+    clear()
+    a = Colorate.Horizontal(Colors.blue_to_green, )
+    print(a)
+    print(thongtin)
+    vanlong(17)
+print("\033[1;35m\033[1m   ╔════════════════╗")
+print("\033[1;35m\033[1m   ║ \033[1;34m Trao Đổi Sub\033[1;35m\033[1m  ║")
+print("\033[1;35m\033[1m   ╚════════════════╝")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[1.1] \033[1;37m\033[1mTOOL TDS TikTok")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[1.2] \033[1;37m\033[1mTOOL TDS FaceBook")
+
+
+print("\033[1;35m\033[1m   ╔═══════════════╗")
+print("\033[1;35m\033[1m   ║ \033[1;34m Tool Golike\033[1;35m\033[1m  ║")
+print("\033[1;35m\033[1m   ╚═══════════════╝")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[2.1] \033[1;37m\033[1mTOOL Golike TikTok")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[2.2] \033[1;37m\033[1mTOOL Golike Instagram")
+
+
+
+print("\033[1;35m\033[1m   ╔═════════════════════╗")
+print("\033[1;35m\033[1m   ║ \033[1;34m Tiện ích Facebook \033[1;35m\033[1m ║")
+print("\033[1;35m\033[1m   ╚═════════════════════╝")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[3.1] \033[1;37m\033[1mTOOL Nuôi Acc Fb ")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[3.2] \033[1;37m\033[1mTOOL Buff Share Max Speed ")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[3.3] \033[1;37m\033[1mTOOL Tạo Acc Fb ")
+
+
+print("\033[1;35m\033[1m   ╔════════════╗")
+print("\033[1;35m\033[1m   ║ \033[1;34m Tiện Ích\033[1;35m\033[1m  ║")
+print("\033[1;35m\033[1m   ╚════════════╝")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[4.1] \033[1;37m\033[1mTOOL Ddos Web Vip")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[4.2] \033[1;37m\033[1mTOOL Buff Follow TikTok")
+
+
+
+chon = float(input('\033[1;31m     Nhập Số \033[1;32m: \033[1;33m'))
+
+import requests,os,sys, time
+def check_internet_connection():
+    try:
+        response = requests.get("https://google.com/", timeout=5)
+        return True
+    except requests.ConnectionError:
+        return False
+if not check_internet_connection():
+    print("\n\033[1;39mBạn bug 1 lần nữa sẽ bị dính botnet ngay nhé")
+    sys.exit(1) 
+if chon == 1.1 :
+	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/Tdstt').text)
+
+if chon == 1.2 :
+	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/Tdsfb').text)
+
+if chon == 2.1 :
+	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/Tool%20golike%20tt').text)
+if chon == 2.2 :
+	exec(requests.get('https://raw.githurcontent.com/thong987/Buff-share/refs/heads/main/Tool%20golike%20tt').text)
+	
+	
+if chon == 9.1 :
+	exec(requests.get('https://raw.githubusercontent.com/thong987/Toolbythong/refs/heads/main/Tool?token=GHSAT0AAAAAADCEVKEGZZ2277LEFSSJMWU4Z73RAXA').text)
+if chon == 9.2 :
+	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/share.py').text)
+if chon == 9.3 :
+	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/Accfb').text)
+if chon == 4.1 :
+	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/Tool%20ddos').text)
+if chon == 4.2 :
+	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/Buff%20tiktok').text)
+	
+else :
+	exit()
