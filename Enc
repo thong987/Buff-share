@@ -617,9 +617,9 @@ bpurple = Colors.StaticMIX((Col.pink, Col.blue, Col.blue))
 
 text = f"""
 
-CHẾ ĐỘ 1: OBF THẤP
-CHẾ ĐỘ 2: TRUNG BÌNH
-CHẾ ĐỘ 3: CAO
+CHẾ ĐỘ 1: OBF THẤP (DỄ DEBUG)
+CHẾ ĐỘ 2: TRUNG BÌNH (KHUYẾN KHÍCH NÊN DÙNG)
+CHẾ ĐỘ 3: CAO (FILE MB CAO)
 
 """
 banner = """
