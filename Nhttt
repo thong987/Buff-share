@@ -1,1 +1,2 @@
-Bố Mày Cập nhập thằng nào lỡ getkey mai ib https://www.facebook.com/share/18xu6Ft5FM/ lấy key
+def print_thong_bao():
+    print("Bố Mày Cập nhập thằng nào lỡ getkey mai ib https://www.facebook.com/share/18xu6Ft5FM/ lấy key")
