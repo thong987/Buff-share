@@ -616,6 +616,11 @@ purple = Colors.StaticMIX((Col.green, Col.yellow))
 bpurple = Colors.StaticMIX((Col.pink, Col.blue, Col.blue))
 
 text = f"""
+
+CHẾ ĐỘ 1: OBF THẤP
+CHẾ ĐỘ 2: TRUNG BÌNH
+CHẾ ĐỘ 3: CAO
+
 """
 banner = """
 ████████╗ ██╗  ██╗ ██████╗ ███╗   ██╗ ██████╗ 
@@ -623,9 +628,8 @@ banner = """
    ██║    ███████║ ██║   ██║██╔██╗ ██║ ██║  ███╗
    ██║    ██╔══██║ ██║   ██║██║╚██╗██║ ██║   ██║
    ██║    ██║  ██║ ╚██████╔╝██║ ╚████║ ╚██████╔╝
-   ╚═╝    ╚═╝  ╚═╝  ╚═════╝ ╚═╝  ╚═══╝  ╚═════╝ 
-"""
-print(banner)
+   ╚═╝    ╚═╝  ╚═╝  ╚═════╝ ╚═╝  ╚═══╝  ╚═════╝ """
+
 
 os.system('cls' if os.name == 'nt' else 'clear')
 print(banner)
