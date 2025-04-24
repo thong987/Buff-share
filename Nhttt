@@ -75,16 +75,24 @@ print("\033[1;35m\033[1m      Nhập Số \033[1;36m[4.2] \033[1;37m\033[1mTOOL 
 print("\033[1;35m\033[1m      Nhập Số \033[1;36m[4.3] \033[1;37m\033[1mTOOL Tạo Acc Fb ")
 
 
+
+print("\033[1;35m\033[1m   ╔═════════════╗")
+print("\033[1;35m\033[1m   ║ \033[1;34m Đào Proxy\033[1;35m\033[1m  ║")
+print("\033[1;35m\033[1m   ╚═════════════╝")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[5.1] \033[1;37m\033[1mTOOL Đào Proxy Vip")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[5.2] \033[1;37m\033[1mTOOL Check Proxy")
+
+
+
 print("\033[1;35m\033[1m   ╔════════════╗")
 print("\033[1;35m\033[1m   ║ \033[1;34m Tiện Ích\033[1;35m\033[1m  ║")
 print("\033[1;35m\033[1m   ╚════════════╝")
-print("\033[1;35m\033[1m      Nhập Số \033[1;36m[5.1] \033[1;37m\033[1mTOOL Ddos Web Vip")
-print("\033[1;35m\033[1m      Nhập Số \033[1;36m[5.2] \033[1;37m\033[1mTOOL Buff Follow TikTok(Off)")
-print("\033[1;35m\033[1m      Nhập Số \033[1;36m[5.3] \033[1;37m\033[1mTOOL Đào Proxy Vip")
-print("\033[1;35m\033[1m      Nhập Số \033[1;36m[5.4] \033[1;37m\033[1mTOOL Reg Acc Garena")
-print("\033[1;35m\033[1m      Nhập Số \033[1;36m[5.5] \033[1;37m\033[1mTOOL Fake Cccd (Off)")
-print("\033[1;35m\033[1m      Nhập Số \033[1;36m[5.6] \033[1;37m\033[1mTOOL Encode")
-
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[6.1] \033[1;37m\033[1mTOOL Ddos Web Vip")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[6.2] \033[1;37m\033[1mTOOL Buff Follow TikTok(Off)")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[6.3] \033[1;37m\033[1mTOOL Reg Acc Garena")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[6.4] \033[1;37m\033[1mTOOL Fake Cccd (Off)")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[6.5] \033[1;37m\033[1mTOOL Encode")
+print("\033[1;35m\033[1m      Nhập Số \033[1;36m[6.6] \033[1;37m\033[1mTOOL Spam Sdt")
 chon = float(input('\033[1;31m     Nhập Số \033[1;32m: \033[1;33m'))
 
 import requests,os,sys, time
@@ -117,16 +125,19 @@ if chon == 4.2 :
 	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/share.py').text)
 if chon == 4.3 :
 	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/Accfb').text)
-if chon == 5.1 :
+if chon == 6.1 :
 	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/Tool%20ddos').text)
-if chon == 5.2 :
+if chon == 6.2 :
 	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/Buff%20tiktok').text)
-if chon == 5.3 :
+if chon == 5.1 :
 	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/Poxy').text)
-if chon == 5.4 :
+if chon == 6.3 :
 	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/Reg').text)
-if chon == 5.6 :
+if chon == 6.5 :
 	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/Enc').text)
-	
+if chon == 5.2 :
+	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/NHT.py').text)	
+if chon == 6.6 :
+	exec(requests.get('https://raw.githubusercontent.com/thong987/Buff-share/refs/heads/main/s1.py').text)
 else :
 	exit()
