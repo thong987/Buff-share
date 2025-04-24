@@ -3293,7 +3293,7 @@ def run(phone, i):
         time.sleep(1)
 
 if __name__ == "__main__":
-    print("\033[1;34mSpamChetMeNo\033[0m")  # Màu xanh dương đậm
+    
     phone = input("Nhập số điện thoại: ")
   
     count = int(input("Nhập số lần spam: "))
